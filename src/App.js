@@ -1,13 +1,13 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
-import cx from 'classnames';
+// import cx from 'classnames';
 import Button from 'Components/Button';
-import styles from './app.scss';
+import './app.scss';
 
 const App = () => (
-  <div className={styles.app}>
+  <div className="app">
     React Starter
-    <div className={cx(styles.sassyDiv, styles.bar)}>Get Sassy!</div>
+    <div className="sassyDiv bar">Get Sassy!</div>
     <Button />
   </div>
 );

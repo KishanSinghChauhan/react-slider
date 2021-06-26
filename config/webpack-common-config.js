@@ -1,8 +1,3 @@
-// webpack-common-config.js
-
-// This file will contain configuration data that
-// is shared between development and production builds.
-
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
@@ -16,11 +11,9 @@ module.exports = {
     }),
   ],
   resolve: {
-    // File extensions. Add others and needed (e.g. scss, json)
     extensions: ['.js', '.jsx'],
     modules: ['node_modules'],
-    // Aliases help with shortening relative paths
-    // 'Components/button' === '../../../components/button'
+
     alias: {
       Components: path.resolve(paths.appSrc, 'components'),
       Containers: path.resolve(paths.appSrc, 'containers'),
@@ -30,7 +23,7 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(png|svg|jpg)$/,
+        test: /\.(png|svg|jpg|jpeg)$/,
         use: ['file-loader'],
       },
     ],

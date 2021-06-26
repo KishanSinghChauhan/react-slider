@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './button.scss';
+import './button.scss';
 
 const Button = () => (
-  <div className={style.buttonBox}>
+  <div className="buttonBox">
     <button type="button">Hello</button>
   </div>
 );
